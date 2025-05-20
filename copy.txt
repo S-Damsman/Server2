@@ -27,3 +27,10 @@ pour obtenir le site en local, il suffit de tapper "localhost" dans une page web
 CREATE USER 'admin'@'%' IDENTIFIED BY 'motdepasse';
 GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
+
+ajout connexion distante :
+$i++;
+$cfg['Servers'][$i]['host'] = '192.168.x.x'; // IP de l'autre machine
+$cfg['Servers'][$i]['user'] = 'admin';
+$cfg['Servers'][$i]['password'] = 'motdepasse';
+$cfg['Servers'][$i]['auth_type'] = 'cookie'; // ou 'config' temporairement
