@@ -34,3 +34,14 @@ $cfg['Servers'][$i]['host'] = '192.168.x.x'; // IP de l'autre machine
 $cfg['Servers'][$i]['user'] = 'admin';
 $cfg['Servers'][$i]['password'] = 'motdepasse';
 $cfg['Servers'][$i]['auth_type'] = 'cookie'; // ou 'config' temporairement
+
+# Charger PHP dans Apache
+LoadModule php_module "C:/php/php8apache2_4.dll"
+AddHandler application/x-httpd-php .php
+
+# Définir le répertoire de PHP
+PHPIniDir "C:/php"
+
+# Prioriser les fichiers .php
+DirectoryIndex index.php index.html
+
