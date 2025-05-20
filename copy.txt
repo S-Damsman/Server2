@@ -1,1 +1,29 @@
-test
+Ceci est un test
+coucou j'aime la mere  a matéo
+https://www.apachelounge.com/download/#google_vignette
+https://dev.mysql.com/downloads/mysql/
+https://www.phpmyadmin.net/downloads/
+https://www.php.net/downloads.php
+https://windows.php.net/downloads/releases/
+https://learn.microsoft.com/fr-fr/cpp/windows/latest-supported-vc-redist
+
+git add + nom du fichier 
+
+git commit -m "mon nom de commit"
+
+git push -u origin master
+
+Pour récupérer : 
+soit git clone si c'est la première fois
+sinon git fetch pour vérifier qu'on est a jour
+
+et ensuite on fait git merge origin/master pour fusionner les versions sur GitHub est celle sur notre ordinateur.
+
+Erreur VCRUNTIME140
+https://learn.microsoft.com/fr-fr/cpp/windows/latest-supported-vc-redist
+
+pour obtenir le site en local, il suffit de tapper "localhost" dans une page web
+
+CREATE USER 'admin'@'%' IDENTIFIED BY 'motdepasse';
+GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
